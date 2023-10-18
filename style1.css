@@ -1,0 +1,12 @@
+h1{
+    color: red;
+}
+
+p{
+    color: aliceblue;
+}
+
+.container{
+    background-color: black;
+    padding: 50px;
+}
