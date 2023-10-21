@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Modal, Flex layout, Display, Position, Float, Clearfix and SVG icons in Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+
+<body class="p-3">
+
+    <!--display: none, block, inline, inline-block, flex, grid, table-->
+
+
+
+    <button>click me 1</button>
+    <button>click me 2</button> <!--inline-->
+    
+    <button class="d-block">click me blk-1</button>
+    <button class="d-block">click me blk-2</button> <!--inline-->
+
+    <div class="bg-primary"> div1 </div>
+    <div class="bg-success"> div2 <div> <!--block-->
+
+
+    <div class="bg-primary d-inline"> div1 </div>
+    <div class="bg-secondary d-inline"> div2 <div> <!--block-->
+
+
+    <div class="bg-primary d-inline-block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, odit.</p>
+    </div>
+    <div class="bg-secondary d-inline-block">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, odit.</p>
+    <div> <!--inline-block-->
+    
+
+<br><br>
+
+
+<div class="clearfix">
+    <div id="left-div" class="bg-primary float-start w-50">
+        <h2> left div </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum minus beatae dolores porro autem quaerat molestiae et blanditiis earum!
+        </p>
+    </div>
+
+    <div id="right-div" class="bg-secondary float-end w-50">
+        <h2> right div </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae harum minus beatae dolores porro autem quaerat molestiae et blanditiis earum!
+        </p>
+    </div>
+</div>
+
+    <div class="bg-dark text-white">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus blanditiis expedita voluptates est qui illum, laudantium consequuntur nostrum quae neque?
+        </p>
+    </div>
+
+
+
+    <button class="btn btn-primary">
+        <svg 
+            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+        </svg>
+          
+          Submit </button>
+
+
+
+    <!--positioning: static, fixed, sticky, absolute, relative-->
+
+    <div class="bg-success position-relative" style="height: 200px;">
+        <button class="position-absolute start-50 top-50 translate-middle">click me</button>
+    </div>
+
+
+    <div class="card-container p-3 bg-primary d-flex flex-row-reverse flex-sm-row flex-md-column flex-lg-row justify-content-evenly align-items-center" style="height: 100vh;">
+        <div class="card w-25 align-self-start">
+            <div class="card-body">
+                <h4 class="card-title">Title1</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, praesentium!</p>   
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body">
+                <h4 class="card-title">Title2</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, praesentium!</p>   
+            </div>
+        </div>
+
+        <div class="card w-25">
+            <div class="card-body">
+                <h4 class="card-title">Title3</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, praesentium!</p>   
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         Welcome to Tasin's World!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
